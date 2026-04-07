@@ -1,0 +1,13 @@
+@import "react-toastify/dist/ReactToastify.css";
+@import 'react-modal-video/css/modal-video.css';
+@import "swiper/css/bundle";
+@import "yet-another-react-lightbox/styles.css";
+
+@import "/assets/css/all.min.css";
+@import "/assets/css/animate.css";
+@import "/assets/css/bootstrap.min.css";
+@import "/assets/css/flaticon.css";
+@import "/assets/css/ion.rangeSlider.min.css";
+@import "/assets/css/meanmenu.css";
+@import "/assets/css/nice-select.css";
+@import "/assets/scss/main.scss";

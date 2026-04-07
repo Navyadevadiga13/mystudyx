@@ -1,0 +1,510 @@
+:root {
+	--body: #f8f8f8;
+	--black: #2d2d2d;
+	--white: #fff;
+	--theme: #b4e717;
+	--theme2: #2ecc71;
+	--theme3: #4033ff;
+	--theme4: #1c4b42;
+	--header: #161616;
+	--text: #1c4b42;
+	--border: rgba(44, 47, 88, 0.11);
+	--bg: #f8f8f8;
+	--bg-2: #000;
+	--box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+}
+
+// Theme Color - Defualt Colors
+$body-color: var(--body);
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color2: var(--theme2);
+$theme-color3: var(--theme3);
+$theme-color4: var(--theme4);
+$text-color: var(--text);
+$header-color: var(--header);
+$border-color: var(--border);
+$bg-color: var(--bg);
+$bg-color-2: var(--bg-2);
+$shadow: var(--box-shadow);
+
+//Hover Svg Btn
+.hover-svg {
+	transition: all 0.5s;
+	&:hover {
+		background: $theme-color4 !important;
+		svg {
+			path {
+				stroke: #fff;
+				fill: #fff;
+			}
+		}
+		i {
+			color: #fff;
+		}
+	}
+}
+.hover-theme1 {
+	transition: all 0.4s;
+	&:hover {
+		background: $theme-color4 !important;
+		svg {
+			path {
+				stroke: $theme-color;
+				fill: $theme-color;
+			}
+		}
+		i {
+			color: $theme-color;
+		}
+	}
+}
+.max-300 {
+	width: 300px;
+}
+.max-270 {
+	max-width: 270px;
+}
+.ml-auto {
+	margin-left: auto;
+}
+
+.hover-translate8 {
+	transition: all 0.4s;
+	&:hover {
+		transform: translateY(-8px);
+	}
+}
+
+//section padding
+.pt-100 {
+	padding-top: 100px;
+	@include breakpoint(max-xl) {
+		padding-top: 80px;
+	}
+}
+.pb-100 {
+	padding-bottom: 100px;
+	@include breakpoint(max-xl) {
+		padding-bottom: 80px;
+	}
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+	@include breakpoint(max-xl) {
+		margin-bottom: 30px;
+	}
+	@include breakpoint(max-lg) {
+		margin-bottom: 28px;
+	}
+	@include breakpoint(max-md) {
+		margin-bottom: 22px;
+	}
+}
+
+//section-header
+.section-header {
+	h2 {
+		span {
+			font-size: 48px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		h2 {
+			font-size: 38px;
+			span {
+				font-size: 38px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		h2 {
+			font-size: 32px;
+			span {
+				font-size: 32px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		h2 {
+			font-size: 29px;
+			span {
+				font-size: 29px;
+			}
+		}
+	}
+}
+
+//Italic
+.italic {
+	font-style: italic !important;
+}
+
+.lh-110 {
+	line-height: 110% !important;
+}
+
+.mx-252 {
+	max-width: 252px;
+}
+
+.theme4-border {
+	border: 1px solid $theme-color4;
+}
+
+//color Class
+.body-clr {
+	color: $body-color;
+}
+.body-bg {
+	background-color: $body-color;
+}
+.black-clr {
+	color: $black;
+}
+.black-bg {
+	background-color: $black;
+}
+.white-clr {
+	color: $white;
+}
+.white-bg {
+	background-color: $white;
+}
+.theme-clr {
+	color: $theme-color;
+}
+.theme-bg {
+	background-color: $theme-color;
+}
+.absolute-theme-bg {
+	background-color: $theme-color !important;
+}
+.theme-clr2 {
+	color: $theme-color2;
+}
+.theme-bg2 {
+	background-color: $theme-color2;
+}
+.theme-clr3 {
+	color: $theme-color3;
+}
+.theme-bg3 {
+	background-color: $theme-color3;
+}
+.theme-clr4 {
+	color: $theme-color4;
+}
+.theme-bg4 {
+	background-color: $theme-color4;
+}
+.border-clr {
+	border: 1px solid $border-color;
+}
+.text-clr {
+	color: $text-color;
+}
+
+//font Size
+.fz-10 {
+	font-size: 10px;
+	line-height: 1.5;
+}
+.fz-11 {
+	font-size: 11px;
+	line-height: 1.5;
+}
+.fz-12 {
+	font-size: 12px;
+	line-height: 1.5;
+}
+.fz-13 {
+	font-size: 13px;
+	line-height: 1.5;
+}
+.fz-14 {
+	font-size: 14px;
+	line-height: 1.5;
+}
+.fz-15 {
+	font-size: 15px;
+	line-height: 1.5;
+}
+.fz-16 {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.fz-17 {
+	font-size: 17px;
+	line-height: 1.5;
+}
+.fz-18 {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.fz-19 {
+	font-size: 19px;
+	line-height: 1.5;
+}
+.fz-20 {
+	font-size: 20px;
+	line-height: 1.4;
+}
+.fz-21 {
+	font-size: 21px;
+	line-height: 1.4;
+}
+.fz-22 {
+	font-size: 22px;
+	line-height: 1.4;
+}
+.fz-23 {
+	font-size: 23px;
+	line-height: 1.4;
+}
+.fz-24 {
+	font-size: 24px;
+	line-height: 1.4;
+}
+.fz-25 {
+	font-size: 25px;
+	line-height: 1.4;
+}
+.fz-26 {
+	font-size: 26px;
+	line-height: 1.4;
+}
+.fz-27 {
+	font-size: 27px;
+	line-height: 1.4;
+}
+.fz-28 {
+	font-size: 28px;
+	line-height: 1.4;
+}
+.fz-36 {
+	font-size: 36px;
+	line-height: 1.2;
+}
+
+//font Weight
+.fw-300 {
+	font-weight: 300 !important;
+}
+.fw-400 {
+	font-weight: 400 !important;
+}
+.fw-500 {
+	font-weight: 500 !important;
+}
+.fw-600 {
+	font-weight: 600 !important;
+}
+.fw-800 {
+	font-weight: 800 !important;
+}
+
+//width
+.w-24 {
+	width: 24px;
+}
+.w-26 {
+	width: 26px;
+}
+.w-28 {
+	width: 28px;
+}
+.w-30 {
+	width: 30px;
+}
+.w-32 {
+	width: 32px;
+}
+.w-34 {
+	width: 34px;
+}
+.w-36 {
+	width: 36px;
+	min-width: 36px;
+}
+.w-38 {
+	width: 38px;
+}
+.w-40 {
+	width: 40px;
+}
+.w-44 {
+	width: 44px;
+}
+.w-45 {
+	width: 45px;
+}
+.w-48 {
+	width: 48px;
+}
+.min-w-48 {
+	min-width: 48px;
+}
+.w-50 {
+	width: 50px;
+}
+.w-54 {
+	width: 56px;
+}
+.w-56 {
+	width: 56px;
+}
+.w-60 {
+	width: 60px;
+}
+.w-64 {
+	width: 64px;
+}
+.w-66 {
+	width: 66px;
+}
+.w-70 {
+	width: 70px;
+}
+.w-80 {
+	width: 80px;
+}
+
+.h-24 {
+	height: 24px;
+}
+.h-26 {
+	height: 26px;
+}
+.h-28 {
+	height: 28px;
+}
+.h-30 {
+	height: 30px;
+}
+.h-32 {
+	height: 32px;
+}
+.h-34 {
+	height: 34px;
+}
+.h-36 {
+	height: 36px;
+}
+.h-38 {
+	height: 38px;
+}
+.h-40 {
+	height: 40px;
+}
+.h-44 {
+	height: 44px;
+}
+.h-45 {
+	height: 45px;
+}
+.h-48 {
+	height: 48px;
+}
+.h-50 {
+	height: 50px;
+}
+.h-54 {
+	height: 56px;
+}
+.h-56 {
+	height: 56px;
+}
+.h-60 {
+	height: 60px;
+}
+.h-64 {
+	height: 64px;
+}
+.h-66 {
+	height: 66px;
+}
+.h-70 {
+	height: 70px;
+}
+.h-80 {
+	height: 80px;
+}
+//Padding
+.pe-20 {
+	padding-right: 20px !important;
+}
+
+@include breakpoint(max-lg) {
+	.fz-15 {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.fz-16 {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	.fz-17 {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	.fz-18 {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.fz-19 {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.fz-20 {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.fz-21 {
+		font-size: 19px;
+		line-height: 1.4;
+	}
+	.fz-22 {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	.fz-23 {
+		font-size: 21px;
+		line-height: 1.4;
+	}
+	.fz-24 {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	.fz-25 {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	.fz-26 {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	.fz-27 {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	.fz-28 {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	.w-48 {
+		width: 38px;
+	}
+	.h-48 {
+		height: 38px;
+	}
+	.min-w-48 {
+		min-width: 38px;
+	}
+	.fz-36 {
+		font-size: 29px;
+		line-height: 1.4;
+	}
+}

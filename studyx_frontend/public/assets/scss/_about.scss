@@ -1,0 +1,41 @@
+//about-content
+.about-content{
+    .counter-area{
+        width: 171px;
+        .satisfied{
+            img{
+                &:not(:first-child){
+                    margin-left: -14px;
+                }
+            }
+        }
+    }
+    .boxes{
+        max-width: 330px;
+    }
+    @include breakpoint(max-md){
+        h2{
+            font-size: 29px;
+        }
+        .counter-area{
+            h2{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.about-thumb2{
+    .text-circles{
+        position: absolute;
+        right: -60px;
+        top: -110px;
+        z-index: 1;
+    }
+    @include breakpoint(max-lg){
+        .text-circles{
+            right: 10px;
+            top: 10px;
+        }
+    }
+}

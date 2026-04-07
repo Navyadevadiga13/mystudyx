@@ -1,0 +1,135 @@
+.footer-widget-wrapper {
+	background: url("/assets/img/footer/footer-bg.png") no-repeat center
+		center;
+	background-size: cover;
+	max-width: 1762px;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.socal-icon {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	a {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 30px;
+		display: inline-block;
+		text-align: center;
+		transition: all 0.5s;
+		&:hover {
+			color: $white;
+		}
+	}
+	&.style1 {
+		a {
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			color: $white;
+			&:hover {
+				background: $theme-color;
+				color: $theme-color4;
+			}
+		}
+	}
+}
+
+.footer-logo {
+	max-width: 180px;
+	img {
+		width: 100%;
+	}
+}
+.footer-header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 80px 0 50px;
+}
+
+.footer-bottom {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 39px 0;
+	.footer-list {
+		@include flex;
+		gap: 9px 32px;
+
+		li {
+			font-size: 18px;
+
+			a {
+				color: $white;
+				transition: all 0.5s;
+				i {
+					transition: all 0.4s;
+				}
+				&:hover {
+					i {
+						transform: rotate(0);
+					}
+					color: $theme-color;
+				}
+			}
+		}
+	}
+}
+
+.footer-middle {
+	padding: 64px 0;
+	.search-widget {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.rot180 {
+	transform: rotate(-38deg);
+}
+@media screen and (max-width: 991px) {
+	.footer-middle {
+		padding: 40px 0;
+	}
+	.footer-bottom {
+		padding: 24px 0;
+		.footer-list {
+			gap: 9px 32px;
+		}
+	}
+	.footer-header {
+		padding: 60px 0 40px;
+	}
+}
+
+
+.footer-section2{
+	background-color: #043A1F;
+	margin: 11px;
+	border-radius: 0 0 30px 30px;
+	.footer-inner2{
+		padding: 60px 0;
+	}
+	@include breakpoint(max-xl){
+		.footer-inner2{
+			padding: 40px 0;
+		}
+	}
+}
+
+
+//Footer Section 3
+.footer-section3{
+	background: url(../../assets/img/footer/footer-bg2.png) no-repeat center center;
+	background-size: cover;
+}
+.social-style3{
+	a{
+		background-color: $white;
+		&:hover{
+			background: $theme-color3;
+			color: $white;
+		}
+	}
+}
+
+.E9ECF3-bg{
+	background-color: #E9ECF3;
+}

@@ -1,0 +1,137 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+$heading-font: "Plus Jakarta Sans", sans-serif;
+$body-font: "Plus Jakarta Sans", sans-serif;
+
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Pro";
+
+body {
+	font-family: $body-font;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 32px;
+	color: $text-color;
+	background-color: $white;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+input:focus {
+	color: $text-color;
+	outline: none;
+}
+
+input {
+	color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	margin: 0px;
+	padding: 0;
+	color: $text-color;
+	@include transition;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 140px;
+	font-weight: 600;
+	line-height: 108%;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 110%;
+	@include breakpoint(max-xl) {
+		font-size: 38px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 32px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 29px;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 115%;
+	@include breakpoint(max-lg) {
+		font-size: 22px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 21px;
+	}
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 125%;
+	@include breakpoint(max-lg) {
+		font-size: 19px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 18px;
+	}
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 120%;
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 120%;
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+	cursor: pointer;
+	color: $header-color;
+	@include transition;
+	line-height: 1.5;
+}
+
+p {
+	margin: 0px;
+	@include transition;
+	line-height: 1.5;
+}
+
+span {
+	margin: 0px;
+	@include transition;
+}
+
+.container {
+	@include breakpoint(xl) {
+		max-width: 1320px;
+		margin: 0 auto;
+	}
+}

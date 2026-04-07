@@ -1,0 +1,19 @@
+//team-items
+.team-items{
+    transition: all 0.4s;
+    .content{
+        padding: 16px 0 24px;
+    }
+    .hover-theme1{
+        transform: rotate(-40deg);
+        
+    }
+    &:hover{
+        background-color: $theme-color;
+        .hover-theme1{
+            background-color: $theme-color4;
+            color: $white;
+            border-color: $theme-color4 !important;
+        }
+    }
+}

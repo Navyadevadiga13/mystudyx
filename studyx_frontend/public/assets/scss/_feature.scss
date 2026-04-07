@@ -1,0 +1,70 @@
+//feature-sub-item
+
+.feature-sub-item {
+	padding: 20px 22px;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 8px 8px 32px 0px rgba(36, 12, 135, 0.08);
+	@include breakpoint(max-xxl) {
+		padding: 20px 19px;
+	}
+}
+
+.feature-bg {
+	height: 672px;
+	width: 100%;
+	z-index: -1;
+	@include breakpoint(max-lg) {
+		height: 100%;
+	}
+}
+
+//insight-items3
+.insight-section{
+    margin-left: 120px;
+    @include breakpoint(max-xxl){
+        margin-left: 0;
+    }
+}
+.insight-items3 {
+    padding: 16px;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 8px 8px 32px 0px rgba(36, 12, 135, 0.09);
+	backdrop-filter: blur(2.5px);
+	transition: all 0.3s;
+    height: 100% !important;
+    margin: 10px 9px 35px;
+	&:hover {
+		background-color: $theme-color3 !important;
+		.content {
+			.badge-cus {
+				border-radius: 24px;
+				border: 1px solid rgba(255, 255, 255, 0.23);
+				background: rgba(255, 255, 255, 0.22);
+                color: $white;
+			}
+			h4,
+			a {
+				color: $white;
+			}
+			.hover-theme1 {
+				background-color: $white !important;
+				color: $theme-color !important;
+			}
+		}
+	}
+    @include breakpoint(max-xxl){
+        padding: 14px;
+    }
+    @include breakpoint(max-xxxl){
+        h4{
+            a{
+                font-size: 16px;
+            }
+        }
+        .badge-cus{
+            font-size: 11px;
+        }
+    }
+}

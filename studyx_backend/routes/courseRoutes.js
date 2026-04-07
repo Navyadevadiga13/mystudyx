@@ -1,0 +1,23 @@
+const express=require('express');
+const router=express.Router();
+const courseController=require('../controllers/courseController');
+const authenticateAdmin=require('../middleware/authMiddleware');
+const studentMiddleware=require('../middleware/studentMiddleware');
+const {upload}=require('../config/multerConfig');
+router.post('/add_course',authenticateAdmin,courseController.add_course);
+router.get('/get_courses',authenticateAdmin,courseController.get_courses);
+router.get('/get_all_courses',courseController.get_courses);
+router.get('/get_course_by_id/:id',studentMiddleware,courseController.get_course_by_id);
+router.post('/update_course/:id',courseController.update_course);
+router.post('/delete_course/:id',courseController.delete_course);
+router.get('/search_courses',courseController.search_courses);
+router.get('/filter_courses',courseController.filter_courses);
+router.get('/search_and_filter_courses',courseController.search_and_filter_courses);
+router.get('/filter_courses',courseController.filter_courses);
+router.post('/bulk_upload_courses',authenticateAdmin,upload.single('file'),courseController.bulk_upload_courses);
+router.get('/bulk_download_courses/:id', authenticateAdmin,courseController.bulk_download_courses);
+router.get('/get_uploaded_files', authenticateAdmin,courseController.get_uploaded_files);
+router.delete('/delete_bulk_upload/:filename', authenticateAdmin, courseController.delete_bulk_upload);
+router.get('/get_all_users', authenticateAdmin, courseController.display_all_users);
+
+module.exports=router;

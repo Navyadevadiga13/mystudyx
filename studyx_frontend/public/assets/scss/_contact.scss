@@ -1,0 +1,86 @@
+//contact-content1
+.contact-content1 {
+	background-color: $white;
+	border-radius: 24px;
+	padding: 50px 80px;
+	margin-left: -30px;
+	z-index: 1;
+	position: relative;
+}
+
+.contact-thumb1 {
+	position: relative;
+	.cont {
+		border-radius: 16px;
+		background: rgba(255, 255, 255, 0.65);
+		backdrop-filter: blur(10px);
+		max-width: 470px;
+		padding: 24px 38px;
+		position: absolute;
+		bottom: 70px;
+		left: 95px;
+	}
+}
+
+.form__grp {
+	.form-control {
+		font-size: 15px;
+		color: $text-color;
+		border: none;
+		border-bottom: 1px solid $border-color;
+		border-radius: 0;
+		padding: 0;
+		padding-bottom: 14px;
+		outline: none;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}
+
+.mail-address-items {
+	padding: 48px 32px;
+	border-radius: 24px;
+	border: 1px solid var(--color-Border, #dde4e3);
+	background: #fff;
+	transition: all 0.4s;
+	&:hover{
+		border-color: $theme-color;
+	}
+	@include breakpoint(max-xxl){
+		padding: 40px 20px;
+	}
+	@include breakpoint(max-xl){
+		padding: 32px 19px;
+	}
+}
+
+@include breakpoint(max-xl) {
+	.contact-content1 {
+		padding: 24px 22px;
+		margin-left: -0px;
+		z-index: 1;
+		position: relative;
+	}
+	.contact-thumb1 {
+		.cont {
+			bottom: initial;
+			top: 16px;
+			left: 16px;
+		}
+	}
+}
+@include breakpoint(max-sm) {
+	.contact-thumb1 {
+		.cont {
+			top: 5px;
+			left: 5px;
+			right: 5px;
+			padding: 18px 16px;
+		}
+	}
+}
+p.form_error{
+	color:red;
+}
