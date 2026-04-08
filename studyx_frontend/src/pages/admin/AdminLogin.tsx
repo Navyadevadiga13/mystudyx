@@ -332,7 +332,7 @@ const AdminLogin: React.FC = () => {
         <div className="text-center mb-3">
           <i className="bi bi-key-fill" style={{ fontSize: 24, color: mainGreen }}></i>
 
-          <h3 style={{ color: 'green', fontWeight: 600, marginTop: 10 }}>
+          <h3 style={{ color: 'white', fontWeight: 600, marginTop: 10 }}>
             Admin Login
           </h3>
 
